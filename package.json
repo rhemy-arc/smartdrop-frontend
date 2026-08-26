@@ -6,14 +6,14 @@
     "node": ">=20.9.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "dev:stack": "bash scripts/dev-stack.sh",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "dev:stack": "node init && bash scripts/dev-stack.sh",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage --coverage.include src/lib/soroban.ts",
-    "build:analyze": "ANALYZE=true next build",
+    "build:analyze": "node init && ANALYZE=true next build",
     "playwright": "playwright test --config e2e/playwright.config.ts",
     "contributors:sync": "node scripts/sync-lernza-contributors.mjs",
     "contributors:github-insights": "node scripts/record-lernza-github-coauthors.mjs"
