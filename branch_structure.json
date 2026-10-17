@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "docs/service-worker-readme",
+    "feat/csp-nonce",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "docs/service-worker-readme": "main",
+    "feat/csp-nonce": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "docs/service-worker-readme",
+    "feat/csp-nonce",
+    "origin"
+  ]
+}
